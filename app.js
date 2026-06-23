@@ -13,13 +13,13 @@ const firebaseConfig = {
 };
 
 // Configuração do WhatsApp - ADICIONE SEU NÚMERO AQUI (Apenas números com DDD e sem espaços)
-const WHATSAPP_NUMBER = "5588988470199"; 
+const WHATSAPP_NUMBER = "5588988470190"; 
 const WHATSAPP_MESSAGE = "Olá! Tenho uma dúvida sobre os jogos";
 
 // Inicialização Estrita
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
-const auth = firebase.auth();
+const auth = firebase.auth(); 
 
 // ELEMENTOS DOM
 const gamesMosaic = document.getElementById('gamesMosaic');
