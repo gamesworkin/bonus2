@@ -623,7 +623,7 @@ nav ul li:hover, nav ul li.active {
 .hidden { display: none !important; }
 
 /* ============================================================================
-   MEDIA QUERIES - VERSÃO MOBILE EXTREMAMENTE RESPONSIVA (CORRIGIDA)
+   MEDIA QUERIES - VERSÃO MOBILE RIGOROSAMENTE RESPONSIVA E CORRIGIDA
    ============================================================================ */
 @media (max-width: 900px) {
     header {
@@ -701,29 +701,69 @@ nav ul li:hover, nav ul li.active {
         font-size: 0.8rem;
     }
 
-    /* Sobrescreve completamente o grid do desktop para anular conflitos e forçar 3 por linha perfeitos */
+    /* Força rigorosamente as 3 colunas simétricas sem estourar */
     .games-mosaic { 
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         gap: 8px !important;
+        width: 100% !important;
     }
     
     .game-card {
-        padding: 8px;
+        padding: 6px;
         border-radius: 8px;
+    }
+
+    .game-cover-wrapper {
+        border-radius: 6px;
     }
     
     .game-title {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         margin-top: 6px;
+        letter-spacing: 0px;
     }
 
+    /* Redimensionamento proporcional e simétrico dos Modais no Mobile */
     .modal-content {
-        padding: 30px 20px;
+        width: 92% !important;
+        max-width: 380px !important;
+        padding: 25px 15px !important;
+        border-radius: 12px;
     }
 
     .modal-body {
-        gap: 20px;
+        gap: 18px !important;
+        max-height: 75vh;
+    }
+
+    .modal-cover-wrapper {
+        max-width: 180px !important;
+    }
+
+    .modal-info {
+        gap: 15px !important;
+    }
+
+    #modalTitle {
+        font-size: 1.2rem !important;
+    }
+
+    #modalDescription {
+        font-size: 0.9rem !important;
+        line-height: 1.4;
+    }
+
+    .btn-download {
+        padding: 12px 24px !important;
+        font-size: 0.9rem !important;
+        width: 100%;
+    }
+
+    .close-modal {
+        top: 10px;
+        right: 15px;
+        font-size: 1.8rem;
     }
 
     .game-tooltip {
