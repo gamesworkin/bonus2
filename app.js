@@ -11,7 +11,7 @@ const firebaseConfig = {
     appId: "1:1066854012332:web:0caad49aa18422b39b9609"
 };
 
-// Configuração do WhatsApp - ADICIONE SEU NÚMERO AQUI (Apenas números com DDD e sem espaços)
+// Configuração do WhatsApp Atualizada Conforme Solicitado
 const WHATSAPP_NUMBER = "5588988470190"; 
 const WHATSAPP_MESSAGE = "Olá! Tenho uma dúvida sobre os jogos.";
 
