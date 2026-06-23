@@ -1,6 +1,5 @@
 // ============================================================================
 // CONFIGURAÇÃO DO FIREBASE (SUBSTITUA PELOS SEUS DADOS REAIS DO CONSOLE)
-// ATENÇÃO: No databaseURL NÃO coloque ".json" no final! Deixe terminar em .com ou rtdb.firebaseio.com
 // ============================================================================
 const firebaseConfig = {
     apiKey: "AIzaSyAQUCCvXQFuCcRHBqNqg4XxSENa8Xv0WeA",
@@ -14,12 +13,12 @@ const firebaseConfig = {
 
 // Configuração do WhatsApp - ADICIONE SEU NÚMERO AQUI (Apenas números com DDD e sem espaços)
 const WHATSAPP_NUMBER = "5588988470190"; 
-const WHATSAPP_MESSAGE = "Olá! Tenho uma dúvida sobre os jogos";
+const WHATSAPP_MESSAGE = "Olá! Tenho uma dúvida sobre os jogos.";
 
 // Inicialização Estrita
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
-const auth = firebase.auth(); 
+const auth = firebase.auth();
 
 // ELEMENTOS DOM
 const gamesMosaic = document.getElementById('gamesMosaic');
